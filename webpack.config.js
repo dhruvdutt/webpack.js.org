@@ -109,14 +109,7 @@ const interactiveConfig = {
       react: 'preact-compat/dist/preact-compat.min.js',
       'react-dom': 'preact-compat/dist/preact-compat.min.js'
     }
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
-  ]
+  }
 };
 
 module.exports = function(env) {
