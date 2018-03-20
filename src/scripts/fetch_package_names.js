@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ./fetch_package_names <suffix> > output
 // ./fetch_package_names "-loader" > output.json
-const GitHubApi = require("github");
+const GitHubApi = require("@octokit/rest");
 
 if (require.main === module) {
     main();
